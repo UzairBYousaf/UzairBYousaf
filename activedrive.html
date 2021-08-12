@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Post Name</title>
+
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+
+	<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="default.css">
+
+
+	<style type="text/css">
+		.img-container{
+			max-width: 600px;
+		}
+
+		img{
+			width: 100%
+		}
+
+	</style>
+
+</head>
+<body>
+	<div class="nav-wrapper">
+
+		<!-- Link around dots-wrapper added after tutorial video -->
+		<a href="index.html">
+			<div class="dots-wrapper">
+				<div id="dot-1" class="browser-dot"></div>
+				<div id="dot-2" class="browser-dot"></div>
+				<div id="dot-3" class="browser-dot"></div>
+			</div>
+		</a>
+
+		<ul id="navigation">
+			<li><a href="index.html#contact">Contact</a></li>
+
+		</ul>
+	</div>
+
+	<div class="main-container">
+		<br>
+
+		<div class="img-container">
+			<img src="images/dash.jpg">
+		</div>
+		
+		<h3>ActiveDrive - Drowsiness Detection System</h3>
+
+		<p>This was my Final Year Project during my time at NUST, it was a system designed to detect driver fatigue levels using facial features captured by a dashboard camera, which were then fed to a pre-trained Neural Network.
+		<br>
+		<br>
+		The system consisted of a Nvidia Jetson Nano Development Board which was running a pre-Trained MobileNet architecture trained on a dataset of 5000+ images.
+		<br>
+		<br>
+		A camera would capture a live videofeed of the driver, where each frame would now be fed to the neural network running in the Jetson computer, a prediction would be made for each frame. If consequetive frames were predicted to be drowsy, then an alarm would be sounded off to alert the driver.
+		<br>
+		<br>
+		The project also included a mobile application, where the driver can be notified on the phone as well through a mobile app, as well as a FireBase Database where data regarding previous warnings issued to the driver would be stored.
+
+		<h5>Technologies:</h5>
+		<ul>
+			<li>- Python</li>
+			<li>- TensorFlow & KERAS</li>
+			<li>- Nvidia Jetson Nano Development Board</li>
+			<li>- Android Studio</li>
+			<li>- Visual Studio 2019</li>
+			<li>- Jupyter Notebook</li>
+			<li>- FireBase Cloud Storage</li>
+			<li>- Nvidia CUDA</li>
+		</ul>
+
+
+		<h5>Final Result</h5>
+		<div class="img-container">
+			<img src="images/activedriveresult.jpg">
+		</div>
+
+		<h6>Final Hardware</h5>
+		<div class="img-container">
+			<img src="images/activedrivefinalpost.jpg">
+		</div>
+
+		<h5>MobileNet Neural Network</h5>
+		<div class="img-container">
+			<img src="images/activedriveneural.png">
+		</div>
+	</div>
+
+</body>
+</html>
